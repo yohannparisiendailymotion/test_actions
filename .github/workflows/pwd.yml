@@ -7,9 +7,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Run PWD
+      - name: Run PWD 1
         run: pwd
       - name: Change Directory 
-        run: cd ~/directory1
+        run: cd ./directory1
+      - name: Run PWD 2
+        run: pwd
+      - name: Return Previous
+        run: cd -
+      - name: Run PWD 3
+        run: pwd
       - name: ReChange Directory 
         run: cd ~/directory2
+      - name: Run PWD 4
+        run: pwd
