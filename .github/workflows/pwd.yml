@@ -7,17 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Run LS 1
-        run: ls -l
       - name: Change Directory 
-        run: cd ./directory1
-      - name: Run LS 2
-        run: ls -l
-      - name: Return Previous
-        run: cd ../
-      - name: Run LS 3
-        run: ls -l
+        run: cd ./directory1 && ls -l
       - name: ReChange Directory 
-        run: cd ./directory2
-      - name: Run LS 4
-        run: ls -l
+        run: cd ./directory2 && ls -l
