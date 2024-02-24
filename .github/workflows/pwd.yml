@@ -1,0 +1,15 @@
+name: PWD
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run PWD
+        run: pwd
+      - name: Change Directory 
+        run: cd ~/directory1
+      - name: ReChange Directory 
+        run: cd ~/directory2
