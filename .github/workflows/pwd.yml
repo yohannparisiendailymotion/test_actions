@@ -14,10 +14,10 @@ jobs:
       - name: Run PWD 2
         run: pwd
       - name: Return Previous
-        run: cd -
+        run: cd ../
       - name: Run PWD 3
         run: pwd
       - name: ReChange Directory 
-        run: cd ~/directory2
+        run: cd ./directory2
       - name: Run PWD 4
         run: pwd
